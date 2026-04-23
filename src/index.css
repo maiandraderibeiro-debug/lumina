@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  /* Lumina System Colors */
+  --color-lumina-bg-primary: #E9D5FF;
+  --color-lumina-bg-secondary: #D8B4FE;
+  --color-lumina-border: #C084FC;
+  --color-lumina-text-main: #2B124C;
+  --color-lumina-text-sub: #4C1D95;
+  --color-lumina-accent: #6D28D9;
+  --color-lumina-accent-hover: #8B5CF6;
+  --color-lumina-surface-light: #F3E8FF;
+}
+
+body {
+  background-color: var(--color-lumina-bg-primary); 
+  color: var(--color-lumina-text-main); 
+  overscroll-behavior-y: none; /* Previne scroll bounce no mobile */
+}
+
+/* Scrollbar invisível estilo mobile nativo */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
